@@ -1,0 +1,27 @@
+.single-giftlist{
+    .page-title{
+        margin-bottom:0;
+    }
+    .details{
+        border-top: 1px solid rgba(black,0.1);
+        border-bottom: 1px solid rgba(black,0.1);
+        display: flex;
+        align-items: center;
+        margin-bottom:30px;
+
+        .item{ 
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            .icon{
+                margin-right:10px;
+
+                svg{
+                  max-width:20px;
+                  display: flex;
+                  fill: #cec4c1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+
+.giftlist-list{
+    .list-result{
+
+        .results{
+            display:flex;
+            flex-wrap:wrap;
+            width:100%;
+            &.column-4{
+                .giftlist{
+                    flex:0 0 25%;
+                    max-width:25%;
+                    width:100%;
+                    
+                    a{
+                        padding:20px;
+
+                        .thumb{
+                            overflow:hidden;
+                            img{
+                                transform:scale(1);
+                                transition:all 0.3s ease-in-out;
+                            }
+                        }
+
+                        &:hover{
+                            .thumb{
+                                img{
+                                    transform:scale(1.1);
+                                }
+                            }
+                        }
+
+                        .description{
+                            background: #f2f2f2;
+                            z-index: 2;
+                            position: relative;
+                            max-width: 90%;
+                            margin: 0 auto;
+                            margin-top: -30px;
+                            text-align: center;
+                            padding: 10px 0;
+                            p{
+                                margin:0;
+                            }
+
+                            .name{
+                                font-weight: bold;
+                            }
+                            .date{
+                                font-size: 0.9em;
+                            }
+
+                            .btn{
+                                text-transform:uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

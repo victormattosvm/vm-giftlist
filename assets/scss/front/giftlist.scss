@@ -1,0 +1,317 @@
+.post-type-archive-giftlist,
+.search-results,
+.search-no-results {
+    .archive-page {
+        margin: 0 auto;
+        margin-bottom: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 95%;
+
+        .giftlist-div {
+            max-width: 650px;
+            padding: 100px 50px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+
+            .title-list-first {
+                width: 100%;
+                text-align: center;
+                color:black;
+                font-size: 3.5rem;
+                margin: 0;
+                font-weight: normal;
+                text-transform: uppercase;
+
+                &:after {
+                    content: '';
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    left: 155px;
+                    width: 35px;
+                    height: 55px;
+                }
+
+                &:before {
+                    content: '';
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    right: 155px;
+                    width: 35px;
+                    height: 55px;
+                }
+            }
+
+            .title-list-second {
+                width: 100%;
+                text-align: center;
+                color: black;
+                font-size: 7rem;
+                border-bottom: 1px solid black;
+                margin-bottom: 50px;
+                padding-bottom: 50px;
+            }
+
+            .search,
+            .manage-giftlist {
+                h1 {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .search {
+                //border-bottom: 2px solid black;
+                margin-bottom: 0;
+                padding-bottom: 20px;
+
+                .search-giftlist-title {
+                    color: black;
+                    font-size: 3rem;
+                }
+
+                .search-form {
+                    .search-form-giftlist {
+                        max-width: 600px;
+                        padding: 5px 10px 5px 20px;
+                        margin: 0 auto;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        align-items: center;
+
+
+                        input {
+                            width: 100%;
+                            letter-spacing: 0.7px;
+                            height: 50px;
+                            background: white;
+                            border: 1px solid #ccc8c6;
+
+                        }
+
+                        button {
+                            width: 60px;
+                            height: 50px;
+                            font-size: 2.0rem;
+                            color: white;
+                            background-color: black;
+                            font-weight: 400;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: none;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+            }
+
+            .manage-giftlist {
+                text-align: center;
+                max-width: 800px;
+
+                .search-giftlist-title {
+                    color: black;
+                    font-size: 2.3rem;
+                }
+
+                .create-list {
+                    text-align: center;
+                    color: white;
+                    background-color: black;
+                    padding: 20px 40px;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    margin-bottom: 30px;
+                    width: 100%;
+                }
+
+                .manage-list {
+                    text-align: center;
+                    color: black;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 1px solid black;
+                    padding: 20px 40px;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    margin-bottom: 30px;
+                    width: 100%;
+                }
+
+                .manage-list {
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .giftlist-list {
+        .list-result {
+            .search-result {
+                font-size: 2.0rem;
+                color: black;
+                margin-bottom: 30px;
+            }
+
+            .table-lists,
+            tr,
+            th {
+                border: 1px solid black;
+
+                .titles-table {
+                    th {
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+
+                tr {
+                    th {
+                        font-weight: normal;
+                        text-align: center;
+
+                        a {
+
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.single-giftlist {
+    .products {
+
+        .product-type-variable,
+        .product-type-simple {
+            display: flex;
+            flex-wrap: wrap;
+
+            .img {
+                flex: 0 0 100%;
+                overflow: hidden;
+                width: 100%;
+                height: 300px;
+
+                img {
+                    transition: all 300ms ease-in-out;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            span,
+            p {
+                flex: 0 0 100%;
+                font-weight: 400;
+                font-size: 1.6rem;
+                max-height: 4rem;
+                line-height: 2rem;
+                text-align: left;
+                margin-top: 10px;
+                padding: 0;
+                height: 50px;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                color: #3d322c;
+            }
+
+            .price-variable, .woocommerce-Price-amount {
+                flex: 0 0 100%;
+                margin: 0;
+                height: 25px;
+                color: #776353;
+                font-size: 1.8rem;
+                font-weight: 700;
+                .amount,
+                .woocommerce-Price-currencySymbol {
+
+                    color: #776353;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                }
+
+            }
+            .added_to_cart{
+                display: none;
+            }
+            .cart {
+                width: 100%;
+
+                .quantity {
+                    display: flex;
+                    border: 1px solid #efefef;
+                    max-width: 150px;
+
+                    .counter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex: 0 0 30%;
+                        max-width: 30%;
+                        height: 50px;
+                        color: #a89f99;
+                        cursor: pointer;
+                    }
+
+                    .counter.value {
+
+                        flex: 0 0 40%;
+                        max-width: 40%;
+                        border: 1px solid #efefef;
+                        border-top: 0;
+                        border-bottom: 0;
+                    }
+                }
+            }
+
+            p {
+                margin: 0;
+                height: 25px;
+            }
+
+            button {
+                flex: 0 0 100%;
+                height: 50px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                font-size: 2rem;
+                vertical-align: middle;
+                color: white;
+                background-color: rgba(94, 72, 58, 0.8);
+                border: 0;
+                margin-top: 10px;
+                width: 100%;
+
+                &:hover {
+                    background-color: rgba(94, 72, 58, 0.7);
+                    ;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
